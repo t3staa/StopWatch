@@ -69,7 +69,7 @@ internal class Program
     static void Start(int time)
     {
         
-        int currentTime = 0_0;
+        int currentTime = 0;
 
         double totalPorcentagem = (double)time;
 
@@ -80,7 +80,7 @@ internal class Program
             Console.Clear();
             currentTime++;
             Console.WriteLine("◤━━━━━━━━━━━━━━━━━━━━◥");
-            Console.WriteLine($"    Cronometro: {currentTime}    ");
+            Console.WriteLine($"    Cronometro: {string.Format("{0:00}", currentTime)}    ");
 
             if(totalPorcentagem < 20)
                 Console.WriteLine("   [■□□□□□□□□□] 10%   ");
